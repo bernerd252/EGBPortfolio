@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul>
+    <li>
+        <a href="#">Item 1</a>
+        <img src="" alt="">
+    </li>
+    <li>
+        <a href="#">Item 2</a>
+        <img src="" alt="">
+    </li>
+    <li>
+        <a href="#">Item 3</a>
+        <img src="" alt="">
+    </li>
+</ul>
+</body>
+<style>
+body {
+    padding: 50px;
+}
+ul {
+    border: 1px solid #444;
+    display: inline-block;
+    height: 301px;
+    position: relative;
+    width: 400px;
+}
+li {
+    font: bold 16px/100px sans-serif;
+    height: 100px;
+}
+a {
+    border-right: 1px solid #444;
+    border-top: 1px solid #444;
+    color: red;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 99px;
+}
+li:first-child a {
+    border-top: none;
+}
+li:nth-child(2) a {
+    color: blue;
+}
+li:nth-child(3) a {
+    color: green;
+}
+a:hover {
+    background: red;
+    color: #fff;
+}
+li:nth-child(2) a:hover {
+    background: blue;
+    color: #fff;
+}
+li:nth-child(3) a:hover {
+    background: green;
+    color: #fff;
+}
+img {
+    background: red;
+    display: none;
+    height: 301px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+li:nth-child(2) img {
+    background: blue;
+}
+li:nth-child(3) img {
+    background: green;
+}
+a:hover + img,
+img:hover {
+    display: block;
+}
+</style>
+</html>

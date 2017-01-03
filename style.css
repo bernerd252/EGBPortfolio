@@ -1,0 +1,38 @@
+.icon{
+	padding: 2px;
+	height: 60px;
+	width: 60px;
+}
+
+
+#bodyBackground{
+	background-image: url(https://i.ytimg.com/vi/uxvoerkZcgo/maxresdefault.jpg)
+}
+
+h1{
+	font-size: 50px;
+	opacity:0;
+	background-color:blue;
+}
+
+#code{
+	background-color: white;
+}
+
+.navText{
+	opacity:1;
+	transition: opacity 1s ease-in-out;
+}
+
+.navText:hover{
+	opacity:0;
+	transition:opacity 1s ease-in-out;
+}
+
+#codeAndArt{
+	background-color: white;
+}
+
+#art{
+	background-color: white;
+}
