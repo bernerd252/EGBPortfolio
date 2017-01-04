@@ -19,6 +19,8 @@
 
 
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	
 </head>
 <body>
 
@@ -98,4 +100,33 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script>
+jQuery('#code').hover(function() 
+{ 
+jQuery('#bodyBackground').css("background-image", 
+"url(http://www.w3schools.com/css/trolltunga.jpg)"); 
+}).mouseleave(function(){
+jQuery('#container').css("background-image", "url(http://thumbs.dreamstime.com/thumblarge_536/12838649102C1cO5.jpg)"); 
+});
+
+jQuery('#codeAndArt').hover(function() 
+{ 
+jQuery('#bodyBackground').css("background-image", 
+"url(http://i.imgur.com/RRUe0Mo.png)"); 
+}).mouseleave(function(){
+jQuery('#container').css("background-image", "url(http://thumbs.dreamstime.com/thumblarge_536/12838649102C1cO5.jpg)"); 
+});
+
+jQuery('#art').hover(function() 
+{ 
+jQuery('#bodyBackground').css("background-image", 
+"url(https://s-media-cache-ak0.pinimg.com/originals/9c/de/c3/9cdec3cb26dbce10f661e1211677283a.jpg)"); 
+}).mouseleave(function(){
+jQuery('#container').css("background-image", "url(https://s-media-cache-ak0.pinimg.com/originals/9c/de/c3/9cdec3cb26dbce10f661e1211677283a.jpg)"); 
+});
+
+
+
+</script>
 </html>
