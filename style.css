@@ -10,7 +10,7 @@
 }
 
 #bodyBackground{
-	background-image: url(https://i.ytimg.com/vi/uxvoerkZcgo/maxresdefault.jpg)
+	background-image: url(https://media.giphy.com/media/TlK63Epkke2nnyNv3ws/giphy.gif)
 }
 
 
@@ -20,7 +20,7 @@
 
 .navText{
 	opacity:1;
-	transition: opacity 0s ease-in-out;
+	transition: opacity 1s ease-in-out;
 }
 
 .navText:hover{
@@ -48,6 +48,7 @@ svg {
 text {
   font-size:6em;
   fill:url(#textpattern) ;
+  text-align: center;
   
   }
 
