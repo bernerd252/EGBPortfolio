@@ -51,21 +51,47 @@
 			    /*border-radius: 0 0 0.5em 0.5em;*/
 			}
 
+			.icon{
+				float:right;
+				margin-right: 5px;
+			}
+
+			#toowide{
+				width: 100%;
+				height: 400%;
+			}
+
+			#introBlerb{/*
+				transform: skewY(-20deg) translateX(-40%);*/
+			}
+
+			.parallax-container {
+		      height: "your height here";
+		    }
+
 
 			
 		</style>
 
   </head>
   <body>
+  <!-- <div id="splashscreen">
+    <h2>Welcome !</h2>
+    Take a look at our new products, blablabla
+    <img src="http://i.telegraph.co.uk/multimedia/archive/02182/kitten_2182000b.jpg" />
+
+    <a href="#" class="enter_link">Enter on the website</a>
+</div> -->
   <div class="row">
   <div class = "col-lg-12" id = "container">
+
   </div>
   </div>
   	<div class = "row">
   	<div class = "col-lg-12">
   	 <div class="parallax-container">
       <div class="parallax">
-      	<h1> Edouard Batlle </h1>
+      	<h1> Edouard Batll<char>&#233</char> </h1>
       </div>
     </div>
      </div> 
@@ -73,16 +99,18 @@
      <br>
      <br><br><br>
      <div id="sticky-anchor"></div>
-<div id="sticky">This will stay at top of page</div>
-    
+<div id="sticky">
+	<h4>Edouard Batll<char>&#233</char> Digital Design<img src="images/deviantart-2-32.png" class = "icon"><img src="images/facebook-2-32.png" class = "icon"><img src="images/instagram-2-32.png" class = "icon"><a href="https://github.com/bernerd252" target="_blank"><img src="images/github-7-32.png" class = "icon"></a><img src="images/stackoverflow-2-32.png" class = "icon"><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="images/linkedin-2-32.png" class = "icon"></a></h4>
+
+</div>
+<div id = "introBlerb">    
 <p>
 What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
 </p>
+</div>
  <div class="parallax-container">
-    <div class="parallax"><img src="http://www.artfromcode.com/wp-content/uploads/2008/09/million43abbb-copy.jpg"></div>
+    <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/homepageParallaxBG0.jpg" id = "toowide"></div>
   </div>
   <div class="section white">
     <div class="row container">
@@ -92,15 +120,20 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <div class="row container">
       <h4 class="light">Parallax Demo HTML</h4>
       <pre><code class="language-markup col s12">
- 		<img src="http://31.media.tumblr.com/18791000934cc356ab0384af37ca86ba/tumblr_n37w3xCseM1qav3uso4_r3_500.gif">
+ 		<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/tumblr_n37w3xCseM1qav3uso4_r3_500.gif">
       </code></pre>
     </div>
   </div>
   <div class="parallax-container">
-    <div class="parallax"><img src="https://cdn3.tnwcdn.com/wp-content/blogs.dir/1/files/2011/10/blue_binary-code.jpg"></div>
+    <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/blue_binary-code.jpg"></div>
   </div>
   </body>
   <script type="text/javascript">
+
+  	 $('.enter_link').click(function() { 
+        $(this).parent().fadeOut(500);
+ });
+  
   	$(document).ready(function(){
       $('.parallax').parallax();
     });
