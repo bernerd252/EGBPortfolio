@@ -30,6 +30,7 @@
 		<script src="CSS3DRenderer.js"></script>
 		<script src="typed.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Jura|Unica+One" rel="stylesheet">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <style>
 			#container{
@@ -61,7 +62,7 @@
 
 			#toowide{
 				width: 100%;
-				height: 400%;
+				height: 3000px;
 			}
 
 			.rightSkew{
@@ -71,6 +72,15 @@
 				width: 100%;
 				position: relative;
 				top: 50px;
+			}
+
+			.leftSkew{
+				transform: skewY(3deg) translateX(0%);
+				background-color: white;
+				height: 100px;
+				width: 100%;
+				position: relative;
+				top: -50px;
 			}
 
 			.parallax-container {
@@ -172,42 +182,36 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
  <div class="parallax-container">
     <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/homepageParallaxBG0.jpg" id = "toowide"></div>
   </div>
+  <div class = "leftSkew"></div>
   <div class="section white">
     <div class="row">
     	<div class = "col-sm-12">
-      		<h2 class="header"><strong>Tech Problems >< Elegant Solutions</strong></h2>
+      		<h2 class="header animated fadeInDown "><strong>Tech Problems >< Elegant Solutions</strong></h2>
       	</div>
       	<br><br>
         <div class = "row">
       		<div class = "col-sm-3 aboutIconsDiv">
-      			<img src="images/techIcon.png" class = "aboutIcons">
+      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Expertise in the most modern web development</p>
       		</div>
       		<div class = "col-sm-3 aboutIconsDiv">
-      			<img src="images/problemsIcon.png" class = "aboutIcons">
+      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Tailored individual in depth problem analysis</p>
       		</div>
       		<div class = "col-sm-3 aboutIconsDiv">
-      			<img src="images/elegantIcon.png" class = "aboutIcons">
+      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Current trends in web design, fashion & art</p>
       		</div>
       		<div class = "col-sm-3 aboutIconsDiv">
-      			<img src="images/solutionsIcon.png" class = "aboutIcons">
+      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Uniquely crafted bespoke web solutions</p>
       		</div>
       	</div>
     </div>
-    <div class = "row">
-    	<div class = >
-    		
-    	</div>
-    </div>
-
-    <!--   <p class="grey-text text-darken-3 lighten-3 writting">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p> -->
     </div>
     </div>
     
@@ -216,6 +220,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
   <div class="parallax-container">
     <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/blue_binary-code.jpg"></div>
   </div>
+   <div class = "leftSkew"></div>
+   <div class="section white">
+    <div class="row">
   </body>
   <script type="text/javascript">
 
