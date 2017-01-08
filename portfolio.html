@@ -48,7 +48,7 @@
 			.icon{
 				margin-right: 5px;
 				position: relative;
-				right:-30%;
+				right:-34%;
 			}
 
 			#toowide{
@@ -82,6 +82,7 @@
 		    	position: fixed;
 		    	top: 20px;
 		    	left: 13%;
+		    	
 		    	/*left:50px;*/
 
 		    }
@@ -124,6 +125,11 @@
 		    	text-align: center;
 		    }
 
+		    .modalHeader{
+		    	font-family: 'Unica One', cursive;
+		    	font-size: :300%;
+		    }
+
 
 
 			
@@ -144,10 +150,10 @@
 <!-- HERO-IMAGE -->
 
 <div class="row">
-  	<div class = "col-lg-12" id = "container">
+  	<div class = "col-lg-12" id = "container" class = "animated fadeIn">
 		<div class = "row">
 			<div class = "col-lg-offset-1 col-lg-4 ">
-				<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoGS.png" id = "bigLogo" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogo.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoGS.png';">
+				<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoGS.png" class = "animated fadeIn" id = "bigLogo">
 			</div>
 		</div>
   	</div>
@@ -171,8 +177,8 @@
 		<div class = "col-lg-offset-1 col-lg-4">
 			<img src="images/bigLogoInverted.png" id = "navBarLogo" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogo.png';" onmouseout="this.src='images/bigLogoInverted.png';">
 		</div>
-		<div class = "col-sm-offset-4col-sm-3">
-			<a href="https://github.com/bernerd252" target="_blank"><img src="images/github-7-32.png" class = "icon"></a><a href="http://stackoverflow.com/users/6691663/edouard-batlle"><img src="images/stackoverflow-2-32.png" class = "icon"></a><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="images/linkedin-2-32.png" class = "icon"></a>
+		<div class = "col-md-offset-2 col-md-2 col-sm-offset-4col-sm-3">
+			<a href="https://github.com/bernerd252" target="_blank"><img src="images/github-7-32.png" class = "icon" onmouseover="this.src='images/github-7-32Hover.png';" onmouseout="this.src='images/github-7-32.png';"></a><a href="http://stackoverflow.com/users/6691663/edouard-batlle"><img src="images/stackoverflow-2-32.png" class = "icon" onmouseover="this.src='images/stackoverflow-2-32Hover.png';" onmouseout="this.src='images/stackoverflow-2-32.png';"></a><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="images/linkedin-2-32.png" class = "icon" onmouseover="this.src='images/linkedin-2-32Hover.png';" onmouseout="this.src='images/linkedin-2-32.png';"></a>
 		</div>
 	</div>
 </div>
@@ -193,22 +199,31 @@
       	</div>
       	<br><br>
         <div class = "row">
-      		<div class = "col-sm-3 aboutIconsDiv">
-      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png" class = "aboutIcons">
+      		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
+      			<a href="#modal1"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png" class = "aboutIcons" onmouseover="this.src='images/techIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png';"></a>
+      			<div id="modal1" class="modal">
+			    <div class="modal-content">
+			      <h4 class = "modalHeader">Tech Skills</h4>
+			      <p></p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			    </div>
+			  </div>
       			<br>
       			<p class = "writting">Expertise in the most modern web development</p>
       		</div>
-      		<div class = "col-sm-3 aboutIconsDiv">
+      		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
       			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Tailored individual in depth problem analysis</p>
       		</div>
-      		<div class = "col-sm-3 aboutIconsDiv">
+      		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
       			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Current trends in web design, fashion & art</p>
       		</div>
-      		<div class = "col-sm-3 aboutIconsDiv">
+      		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
       			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png" class = "aboutIcons">
       			<br>
       			<p class = "writting">Uniquely crafted bespoke web solutions</p>
@@ -238,6 +253,12 @@
 </div>
 </body>
 <script type="text/javascript">
+
+	// LOGO FADE IN
+
+	// $(document).ready(function(){
+	// 	  $("#bigLogo").fadeIn(3000);
+ //    });
 
   	// SPLASHSCREEN
 
@@ -286,6 +307,28 @@
 	    $(window).scrollTop(window_top);
 	    window.setTimeout(autoscroll, 100);
 	}
+
+	// MODALLS
+
+	 $(document).ready(function(){
+	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+	    $('#modal1').modal();
+	  });
+
+	 $('#modal1').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: 1, // Opacity of modal background
+      in_duration: 300, // Transition in duration
+      out_duration: 200, // Transition out duration
+      starting_top: '4%', // Starting top style attribute
+      ending_top: '10%', // Ending top style attribute
+      ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+        alert("Ready");
+        console.log(modal, trigger);
+      },
+      complete: function() { alert('Closed'); } // Callback for Modal close
+    }
+  );
 
 	// SPRITES (HERO-IMAGE)
 
