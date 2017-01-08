@@ -1,0 +1,19 @@
+{
+  "name": "egbportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CSS3DRenderer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernerd252/EGBPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernerd252/EGBPortfolio/issues"
+  },
+  "homepage": "https://github.com/bernerd252/EGBPortfolio#readme"
+}

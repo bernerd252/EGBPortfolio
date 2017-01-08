@@ -28,6 +28,8 @@
 		<script src="tween.min.js"></script>
 		<script src="TrackballControls.js"></script>
 		<script src="CSS3DRenderer.js"></script>
+		<script src="typed.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Jura|Unica+One" rel="stylesheet">
 
   <style>
 			#container{
@@ -62,8 +64,13 @@
 				height: 400%;
 			}
 
-			#introBlerb{/*
-				transform: skewY(-20deg) translateX(-40%);*/
+			.rightSkew{
+				transform: skewY(-3deg) translateX(0%);
+				background-color: white;
+				height: 100px;
+				width: 100%;
+				position: relative;
+				top: 50px;
 			}
 
 			.parallax-container {
@@ -81,6 +88,41 @@
 		    	left:9.7%;
 		    	position:relative;
 		    }
+
+		    .header{
+		    	
+			font-family: 'Unica One', cursive;
+			font-size: 500%;
+			text-align: center;
+		    }
+
+		    .writting{
+		    	
+font-family: 'Jura', sans-serif;
+
+font-size: 20px;
+		    }
+
+		    .aboutIcons{
+		    	height:45%;
+		    	width:45%;
+		    	text-align: center;
+		    	margin-bottom: 20px;
+		    	margin-left: 27%;
+
+
+		    }
+
+		   /* .problems{
+		    	position: relative;
+		    	left: 100px;
+		    }*/
+
+		    p{
+		    	text-align: center;
+		    }
+
+
 
 			
 		</style>
@@ -100,7 +142,7 @@
 <div class = "col-lg-offset-1 col-lg-4">
 
 
-<img src="images/bigLogo.png" id = "bigLogo">
+<img src="images/bigLogoGS.png" id = "bigLogo" onmouseover="this.src='images/bigLogo.png';" onmouseout="this.src='images/bigLogoGS.png';">
 </div>
 </div>
   </div>
@@ -118,7 +160,7 @@
      <br><br><br>
      <div id="sticky-anchor"></div>
 <div id="sticky">
-	<h4><img src="images/bigLogo.png" id = "navBarLogo"><img src="images/deviantart-2-32.png" class = "icon"><img src="images/facebook-2-32.png" class = "icon"><img src="images/instagram-2-32.png" class = "icon"><a href="https://github.com/bernerd252" target="_blank"><img src="images/github-7-32.png" class = "icon"></a><img src="images/stackoverflow-2-32.png" class = "icon"><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="images/linkedin-2-32.png" class = "icon"></a></h4>
+	<h4><img src="images/bigLogoInverted.png" id = "navBarLogo" onmouseover="this.src='images/bigLogo.png';" onmouseout="this.src='images/bigLogoInverted.png';"><img src="images/deviantart-2-32.png" class = "icon"><img src="images/facebook-2-32.png" class = "icon"><img src="images/instagram-2-32.png" class = "icon"><a href="https://github.com/bernerd252" target="_blank"><img src="images/github-7-32.png" class = "icon"></a><img src="images/stackoverflow-2-32.png" class = "icon"><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="images/linkedin-2-32.png" class = "icon"></a></h4>
 
 </div>
 <!-- <div id = "introBlerb">    
@@ -131,17 +173,46 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/homepageParallaxBG0.jpg" id = "toowide"></div>
   </div>
   <div class="section white">
-    <div class="row container">
-      <h2 class="header">Parallax</h2>
-      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    <div class="row">
+    	<div class = "col-sm-12">
+      		<h2 class="header"><strong>Tech Problems >< Elegant Solutions</strong></h2>
+      	</div>
+      	<br><br>
+        <div class = "row">
+      		<div class = "col-sm-3 aboutIconsDiv">
+      			<img src="images/techIcon.png" class = "aboutIcons">
+      			<br>
+      			<p class = "writting">Expertise in the most modern web development</p>
+      		</div>
+      		<div class = "col-sm-3 aboutIconsDiv">
+      			<img src="images/problemsIcon.png" class = "aboutIcons">
+      			<br>
+      			<p class = "writting">Tailored individual in depth problem analysis</p>
+      		</div>
+      		<div class = "col-sm-3 aboutIconsDiv">
+      			<img src="images/elegantIcon.png" class = "aboutIcons">
+      			<br>
+      			<p class = "writting">Current trends in web design, fashion & art</p>
+      		</div>
+      		<div class = "col-sm-3 aboutIconsDiv">
+      			<img src="images/solutionsIcon.png" class = "aboutIcons">
+      			<br>
+      			<p class = "writting">Uniquely crafted bespoke web solutions</p>
+      		</div>
+      	</div>
     </div>
-    <div class="row container">
-      <h4 class="light">Parallax Demo HTML</h4>
-      <pre><code class="language-markup col s12">
- 		<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/tumblr_n37w3xCseM1qav3uso4_r3_500.gif">
-      </code></pre>
+    <div class = "row">
+    	<div class = >
+    		
+    	</div>
     </div>
+
+    <!--   <p class="grey-text text-darken-3 lighten-3 writting">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p> -->
+    </div>
+    </div>
+    
   </div>
+  <div class = "rightSkew"></div>
   <div class="parallax-container">
     <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/blue_binary-code.jpg"></div>
   </div>
