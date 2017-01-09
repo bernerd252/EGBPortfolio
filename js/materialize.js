@@ -141,3 +141,127 @@
       complete: function() { alert('Closed'); } // Callback for Modal close
     }
   );
+
+	 // WAYPOINTS
+
+	 $(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#tech').css('opacity', 0);
+ 
+  $('#tech').waypoint(function() {
+      $('#tech').addClass('fadeInLeft');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+
+	 $(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#parallax-1-header').css('opacity', 0);
+ 
+  $('#parallax-1-header').waypoint(function() {
+      $('#parallax-1-header').addClass('fadeInDown');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#problems').css('opacity', 0);
+ 
+  $('#problems').waypoint(function() {
+      $('#problems').addClass('fadeInUp');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#elegant').css('opacity', 0);
+ 
+  $('#elegant').waypoint(function() {
+      $('#elegant').addClass('fadeInUp');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#solutions').css('opacity', 0);
+ 
+  $('#solutions').waypoint(function() {
+      $('#solutions').addClass('fadeInRight');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#logo').css('opacity', 0);
+ 
+  $('#logo').waypoint(function() {
+      $('#logo').addClass('fadeInLeft');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#links').css('opacity', 0);
+ 
+  $('#links').waypoint(function() {
+      $('#links').addClass('fadeInRight');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+
+	 $(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#aboutHeader').css('opacity', 0);
+ 
+  $('#aboutHeader').waypoint(function() {
+      $('#aboutHeader').addClass('fadeInDown');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#aboutBlerb').css('opacity', 0);
+ 
+  $('#aboutBlerb').waypoint(function() {
+      $('#aboutBlerb').addClass('fadeInLeft');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#aboutPic').css('opacity', 0);
+ 
+  $('#aboutPic').waypoint(function() {
+      $('#aboutPic').addClass('fadeInRight');
+  }, { offset: '80%' });
+  console.log("faded!")
+ 
+});

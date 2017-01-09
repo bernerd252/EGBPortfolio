@@ -4,6 +4,7 @@
 	<title>Portfolio</title>
 	<!-- JQUERY -->
 	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -26,8 +27,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="textures/style.css">
+
+	
 </head>
 <body>
+
+
 
 <!-- SPLASHSCREEN -->
 
@@ -66,10 +71,10 @@
 <div id="sticky-anchor"></div>
 <div id="sticky">
 	<div class = "row">
-		<div class = "col-lg-offset-1 col-lg-4">
-			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoInverted.png" id = "navBarLogo" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogo.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoInverted.png';" class="animated fadeIn">
+		<div class = "col-lg-offset-1 col-lg-4 animated" id = "logo">
+			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoInverted.png" id = "navBarLogo" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogo.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoInverted.png';">
 		</div>
-		<div class = "col-md-offset-2 col-md-2 col-sm-offset-4col-sm-3">
+		<div class = "col-md-offset-2 col-md-2 col-sm-offset-4col-sm-3 animated" id = "links">
 			<a href="https://github.com/bernerd252" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/github-7-32.png" class = "icon animated fadeIn" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/github-7-32Hover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/github-7-32.png';"></a><a href="http://stackoverflow.com/users/6691663/edouard-batlle" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/stackoverflow-2-32.png" class = "icon animated fadeIn" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/stackoverflow-2-32Hover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/stackoverflow-2-32.png';"></a><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/linkedin-2-32.png" class = "icon animated fadeIn" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/linkedin-2-32Hover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/linkedin-2-32.png';"></a>
 		</div>
 	</div>
@@ -87,8 +92,8 @@
 
 <div class="section white">
     <div class="row">
-    	<div class = "col-sm-12">
-      		<h2 class="header animated fadeInDown "><strong>Tech PRoblems >< eleganT SoluTions</strong></h2>
+    	<div class = "col-sm-12 animated" id="parallax-1-header">
+      		<h2 class="header"><strong>Tech PRoblems >< eleganT SoluTions</strong></h2>
       	</div>
       	<br><br>
         <div class = "row section">
@@ -97,7 +102,7 @@
    
 		  <!-- 1st ABOUTICON -->
 
-      		<div class = "col-sm-3 aboutIconsDiv animated fadeInLeft">
+      		<div class = "col-sm-3 aboutIconsDiv animated" id = "tech">
       			<a href="#modal1"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png" class = "aboutIcons modal-trigger" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png';"></a>
       			<br>
       			<p class = "writting">Expertise in the most modern web development</p>
@@ -107,7 +112,7 @@
 
       		<!-- 2ND ABOUTICON -->
 
-      		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
+      		<div class = "col-sm-3 aboutIconsDiv animated" id = "problems">
       			<a href="#modal2"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png" class = "aboutIcons modal-trigger" onmouseover="this.src='images/problemsIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png';"></a>      			
       			<br>
       			<p class = "writting">Individually tailored in depth problem analysis</p>
@@ -115,7 +120,7 @@
 
       		<!-- 3RD ABOUTICON -->
 
-      		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
+      		<div class = "col-sm-3 aboutIconsDiv animated" id = "elegant">
       			<a href="#modal3"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png" class = "aboutIcons" onmouseover="this.src='images/elegantIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png';"></a>
       			<br>
       			<p class = "writting">Current trends in web design, fashion & art</p>
@@ -123,7 +128,7 @@
 
       		<!-- 4TH ABOUTICON -->
 
-      		<div class = "col-sm-3 aboutIconsDiv animated fadeInRight">
+      		<div class = "col-sm-3 aboutIconsDiv animated" id = "solutions">
       			<a href="#modal4"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png" class = "aboutIcons" onmouseover="this.src='images/solutionsIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png';"></a>
       			<br>
       			<p class = "writting">Uniquely crafted bespoke web solutions</p>
@@ -261,16 +266,16 @@
     <div class="row">
     	<div class = "col-sm-offset-3 col-sm-3">
     		<div class = "row">
-    			<div class  = "col-sm-12">
-		    		<div class = "header animated fadeInDown">
+    			<div class  = "col-sm-12  animated" id = "aboutHeader">
+		    		<div class = "header">
 		    			<h1>abouT</h1>
 		    		</div> 
 		    	</div>
     		</div> 
     		<div class = "row">
-    			<div class  = "col-sm-12 writting animated fadeInLeft">
+    			<div class  = "col-sm-12 writting animated" id = "aboutBlerb">
 		    	
-		    			<p>Full Stack Developer with extensive creative experience. Implements the forecasting of both creative issues and their solutions to ensure a streamlined process of problem-solving between clients and employers. Expertise offered in web development, including Bootstrap, Firebase, Materialize, MongoDb, MySQL Node, React, Sequalize Three.js. Eligibe to work in USA, EU and UK. Proficient in Spanish, French and Catalan.</p>
+		    			<p>Edouard Batll<char>&#233</char> is a full Stack Developer with extensive creative experience. Implements the forecasting of both creative issues and their solutions to ensure a streamlined process of problem-solving between clients and employers. Expertise offered in web development, including Bootstrap, Firebase, Materialize, MongoDb, MySQL Node, React, Sequalize Three.js. Eligibe to work in USA, EU and UK. Proficient in Spanish, French and Catalan.</p>
 		    		
 		    	</div>
     		</div>   		  		
@@ -278,21 +283,16 @@
     	<div class = "col-sm-3">
     		<div class = "row">
     			<!-- <div class = "col-sm-1 blackLine"></div> -->
-    			<div class  = "col-sm-11">
-		    		<div class = "header animated fadeInRight">
+    			<div class  = "col-sm-11  animated" id = "aboutPic">
+		    		<div class = "header">
 		    			<img id="aboutPic" src="images/aboutPic.png"  onmouseover="this.src='images/aboutPicGif.gif';" onmouseout="this.src='images/aboutPic.png';">
 		    		</div> 
 		    	</div>
     		</div> 
-    		<div class = "row">
-    			<div class  = "col-sm-12 writting animated fadeInUp">
-		    			<h6 class = "heading">other projects</h6>
-		    			<a href="https://www.facebook.com/edouardbatlleart" class="waves-effect waves-light btn black" target="blank">Edouard Batll<char>&#233</char> Art</a>
-		    		
-		    	</div>
-    		</div>   		  		
+    				  		
     	</div>
     </div>
+    
 </div>
 </body>
 <script type="text/javascript">
