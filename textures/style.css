@@ -38,6 +38,15 @@
 				top: 50px;
 			}
 
+			.rightSkewLine{
+				transform: skewY(-3deg) translateX(0%);
+				background-color: black;
+				height: 20px;
+				width: 100%;
+				position: relative;
+				top: 60px;
+			}
+
 			.leftSkew{
 				transform: skewY(3deg) translateX(0%);
 				background-color: black;
@@ -45,6 +54,16 @@
 				width: 100%;
 				position: relative;
 				top: -50px;
+			}
+
+			.leftSkewLine{
+				transform: skewY(3deg) translateX(0%);
+				background-color: black;
+				height: 20px;
+				width: 100%;
+				position: relative;
+				top: -40px;
+				
 			}
 
 			.parallax-container {
@@ -101,6 +120,7 @@
 
 		    #parallax-2-gif{
 		    	position: absolute;
+		    	height: 200%;
 
 		    	
 		    }
@@ -116,6 +136,11 @@
 		    .modal{
 		    	background-color: white;
 		    	height:600px
+		    }
+
+		    .line{
+		    	position:relative;
+		    	left:-2.2%;
 		    }
 
 
