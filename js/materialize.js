@@ -151,7 +151,7 @@
  
   $('#tech').waypoint(function() {
       $('#tech').addClass('fadeInLeft');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -164,7 +164,7 @@
  
   $('#parallax-1-header').waypoint(function() {
       $('#parallax-1-header').addClass('fadeInDown');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -176,7 +176,7 @@ $(document).ready(function(){
  
   $('#problems').waypoint(function() {
       $('#problems').addClass('fadeInUp');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -188,7 +188,7 @@ $(document).ready(function(){
  
   $('#elegant').waypoint(function() {
       $('#elegant').addClass('fadeInUp');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -200,7 +200,7 @@ $(document).ready(function(){
  
   $('#solutions').waypoint(function() {
       $('#solutions').addClass('fadeInRight');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -212,7 +212,7 @@ $(document).ready(function(){
  
   $('#logo').waypoint(function() {
       $('#logo').addClass('fadeInLeft');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -224,7 +224,7 @@ $(document).ready(function(){
  
   $('#links').waypoint(function() {
       $('#links').addClass('fadeInRight');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -237,7 +237,7 @@ $(document).ready(function(){
  
   $('#aboutHeader').waypoint(function() {
       $('#aboutHeader').addClass('fadeInDown');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -249,7 +249,7 @@ $(document).ready(function(){
  
   $('#aboutBlerb').waypoint(function() {
       $('#aboutBlerb').addClass('fadeInLeft');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });
@@ -261,7 +261,7 @@ $(document).ready(function(){
  
   $('#aboutPic').waypoint(function() {
       $('#aboutPic').addClass('fadeInRight');
-  }, { offset: '80%' });
+  }, { offset: '70%' });
   console.log("faded!")
  
 });

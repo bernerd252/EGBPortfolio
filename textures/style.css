@@ -157,4 +157,12 @@
 		    	position: relative;
 		    }
 
+		    .trendsIcon{
+		    	height: 70px;
+		    }
+
+		    .filler{
+		    	height:70px;
+		    	background-color: black;
+		    }
 			
