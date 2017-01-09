@@ -32,7 +32,7 @@
 			.rightSkew{
 				transform: skewY(-3deg) translateX(0%);
 				background-color: black;
-				height: 100px;
+				height: 85px;
 				width: 100%;
 				position: relative;
 				top: 50px;
@@ -50,7 +50,7 @@
 			.leftSkew{
 				transform: skewY(3deg) translateX(0%);
 				background-color: black;
-				height: 100px;
+				height: 85px;
 				width: 100%;
 				position: relative;
 				top: -50px;
