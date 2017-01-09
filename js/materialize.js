@@ -10,9 +10,6 @@
 	//   console.log('callback - particles.js config loaded');
 	// });
 
-	// MODAL
-
-	
 
   	// SPLASHSCREEN
 

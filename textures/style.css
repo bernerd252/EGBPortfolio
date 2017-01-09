@@ -105,6 +105,18 @@
 		    	
 		    }
 
+		    .devSkillsIcon{
+		    	height:60%;
+		    	width:60%;
+		    	position: relative;
+		    	left: 5%;
+		    	
+		    }
+
+		    .modal{
+		    	background-color: white;
+		    	height:600px
+		    }
 
 
 			
