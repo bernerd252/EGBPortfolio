@@ -12,6 +12,7 @@
 	<!-- MATERIALIZE -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
 	<!-- THREE.JS -->
 	<script src="http://threejs.org/build/three.min.js"></script>
 	<script src="tween.min.js"></script>
@@ -23,117 +24,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Jura|Unica+One" rel="stylesheet">
 	<!-- ANIMATE.JS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
- 	<style>
-			#container{
-				position: relative;
-			}
-
-			#sticky {
-			    padding: 0.5ex;
-			    width: 100%;
-			    background-color: black;
-			    color: #fff;
-			    font-size: 2em;
-			    position: absolute;
-			}
-
-			#sticky.stick {
-			    margin-top: 0 !important;
-			    position: fixed;
-			    top: 0;
-			    z-index: 10000;
-			}
-
-			.icon{
-				margin-right: 5px;
-				position: relative;
-				right:-34%;
-			}
-
-			#toowide{
-				width: 100%;
-				height: 3000px;
-			}
-
-			.rightSkew{
-				transform: skewY(-3deg) translateX(0%);
-				background-color: white;
-				height: 100px;
-				width: 100%;
-				position: relative;
-				top: 50px;
-			}
-
-			.leftSkew{
-				transform: skewY(3deg) translateX(0%);
-				background-color: white;
-				height: 100px;
-				width: 100%;
-				position: relative;
-				top: -50px;
-			}
-
-			.parallax-container {
-		      	height: "your height here";
-		    }
-
-		    #bigLogo{
-		    	position: fixed;
-		    	top: 20px;
-		    	left: 13%;
-		    	
-		    	/*left:50px;*/
-
-		    }
-
-		    #navBarLogo{
-		    	left:9.7%;
-		    	position:relative;
-		    }
-
-		    .header{
-		    	
-				font-family: 'Unica One', cursive;
-				font-size: 500%;
-				text-align: center;
-				color: black;
-		    }
-
-		    .writting{
-		    	
-				font-family: 'Jura', sans-serif;
-				font-size: 20px;
-		    }
-
-		    .aboutIcons{
-		    	height:45%;
-		    	width:45%;
-		    	text-align: center;
-		    	margin-bottom: 20px;
-		    	margin-left: 27%;
-
-
-		    }
-
-		   /* .problems{
-		    	position: relative;
-		    	left: 100px;
-		    }*/
-
-		    p{
-		    	text-align: center;
-		    }
-
-		    .modalHeader{
-		    	font-family: 'Unica One', cursive;
-		    	font-size: :300%;
-		    }
-
-
-
-			
-	</style>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="textures/style.css">
 </head>
 <body>
 
@@ -175,10 +67,10 @@
 <div id="sticky">
 	<div class = "row">
 		<div class = "col-lg-offset-1 col-lg-4">
-			<img src="images/bigLogoInverted.png" id = "navBarLogo" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogo.png';" onmouseout="this.src='images/bigLogoInverted.png';">
+			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoInverted.png" id = "navBarLogo" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogo.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/bigLogoInverted.png';" class="animated fadeIn">
 		</div>
 		<div class = "col-md-offset-2 col-md-2 col-sm-offset-4col-sm-3">
-			<a href="https://github.com/bernerd252" target="_blank"><img src="images/github-7-32.png" class = "icon" onmouseover="this.src='images/github-7-32Hover.png';" onmouseout="this.src='images/github-7-32.png';"></a><a href="http://stackoverflow.com/users/6691663/edouard-batlle"><img src="images/stackoverflow-2-32.png" class = "icon" onmouseover="this.src='images/stackoverflow-2-32Hover.png';" onmouseout="this.src='images/stackoverflow-2-32.png';"></a><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="images/linkedin-2-32.png" class = "icon" onmouseover="this.src='images/linkedin-2-32Hover.png';" onmouseout="this.src='images/linkedin-2-32.png';"></a>
+			<a href="https://github.com/bernerd252" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/github-7-32.png" class = "icon animated fadeIn" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/github-7-32Hover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/github-7-32.png';"></a><a href="http://stackoverflow.com/users/6691663/edouard-batlle"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/stackoverflow-2-32.png" class = "icon animated fadeIn" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/stackoverflow-2-32Hover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/stackoverflow-2-32.png';"></a><a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=hp-identity-name" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/linkedin-2-32.png" class = "icon animated fadeIn" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/linkedin-2-32Hover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/linkedin-2-32.png';"></a>
 		</div>
 	</div>
 </div>
@@ -198,33 +90,51 @@
       		<h2 class="header animated fadeInDown "><strong>Tech Problems >< Elegant Solutions</strong></h2>
       	</div>
       	<br><br>
-        <div class = "row">
+        <div class = "row section">
+
+        	<!-- 1ST ABOUTICON -->
+
       		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
-      			<a href="#modal1"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png" class = "aboutIcons" onmouseover="this.src='images/techIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png';"></a>
+      			<a href="#modal1"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png" class = "aboutIcons modal-trigger" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/techIcon.png';"></a>
+
+      			<!-- 1ST MODAL -->
+
       			<div id="modal1" class="modal">
-			    <div class="modal-content">
-			      <h4 class = "modalHeader">Tech Skills</h4>
-			      <p></p>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-			    </div>
-			  </div>
+				    <div class="modal-content">
+				      <h4 class = "modalHeader">Tech Skills</h4>
+				      <p></p>
+				    </div>
+				 </div>
       			<br>
       			<p class = "writting">Expertise in the most modern web development</p>
       		</div>
+
+      		<!-- 2ND ABOUTICON -->
+
       		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
-      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png" class = "aboutIcons">
+      			<a href="#modal2"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png" class = "aboutIcons modal-trigger" onmouseover="this.src='images/problemsIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/problemsIcon.png';"></a>
+      			<div id="modal2" class="modal">
+				    <div class="modal-content">
+				      <h4 class = "modalHeader">Tech Skills</h4>
+				      <p></p>
+				    </div>
+				 </div>
       			<br>
       			<p class = "writting">Tailored individual in depth problem analysis</p>
       		</div>
+
+      		<!-- 3RD ABOUTICON -->
+
       		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
-      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png" class = "aboutIcons">
+      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png" class = "aboutIcons" onmouseover="this.src='images/elegantIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/elegantIcon.png';">
       			<br>
       			<p class = "writting">Current trends in web design, fashion & art</p>
       		</div>
+
+      		<!-- 4TH ABOUTICON -->
+
       		<div class = "col-sm-3 aboutIconsDiv animated fadeInUp">
-      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png" class = "aboutIcons">
+      			<img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png" class = "aboutIcons" onmouseover="this.src='images/solutionsIconHover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/solutionsIcon.png';">
       			<br>
       			<p class = "writting">Uniquely crafted bespoke web solutions</p>
       		</div>
@@ -239,7 +149,7 @@
 <!-- 2ND PARALLAX -->
 
 <div class="parallax-container">
-    <div class="parallax"><img src="https://raw.githubusercontent.com/bernerd252/EGBPortfolio/master/images/blue_binary-code.jpg"></div>
+    <div class="parallax"><img src="images/giphy.gif" id = "parallax-2-gif"></div>
 </div>
 <!-- SKEW -->
 
@@ -249,86 +159,18 @@
 
 <div class="section white">
     <div class="row">
+    	<div class = "col-sm-12">
+    		<div class = "header">
+    			<h1>ABOUT</h1>
+    		</div>    		
+    	</div>
     </div>
 </div>
 </body>
 <script type="text/javascript">
 
-	// LOGO FADE IN
+swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
 
-	// $(document).ready(function(){
-	// 	  $("#bigLogo").fadeIn(3000);
- //    });
-
-  	// SPLASHSCREEN
-
-  	 $('.enter_link').click(function() { 
-        $(this).parent().fadeOut(500);
- 	});
-
-  	// PARALLAX
-  
-  	$(document).ready(function(){
-      $('.parallax').parallax();
-    });
-
-   function sticky_relocate() {
-	    var window_top = $(window).scrollTop();
-	    var div_top = $('#sticky-anchor').offset().top;
-	    if (window_top > div_top) {
-	        $('#sticky').addClass('stick');
-	        $('#sticky-anchor').height($('#sticky').outerHeight());
-	    } else {
-	        $('#sticky').removeClass('stick');
-	        $('#sticky-anchor').height(0);
-	    }
-	}
-
-	// STCICK HEADER
-
-	$(function() {
-	    $(window).scroll(sticky_relocate);
-	    sticky_relocate();
-	});
-
-	var dir = 1;
-	var MIN_TOP = 200;
-	var MAX_TOP = 350;
-
-	function autoscroll() {
-	    var window_top = $(window).scrollTop() + dir;
-	    if (window_top >= MAX_TOP) {
-	        window_top = MAX_TOP;
-	        dir = -1;
-	    } else if (window_top <= MIN_TOP) {
-	        window_top = MIN_TOP;
-	        dir = 1;
-	    }
-	    $(window).scrollTop(window_top);
-	    window.setTimeout(autoscroll, 100);
-	}
-
-	// MODALLS
-
-	 $(document).ready(function(){
-	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-	    $('#modal1').modal();
-	  });
-
-	 $('#modal1').modal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: 1, // Opacity of modal background
-      in_duration: 300, // Transition in duration
-      out_duration: 200, // Transition out duration
-      starting_top: '4%', // Starting top style attribute
-      ending_top: '10%', // Ending top style attribute
-      ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-        alert("Ready");
-        console.log(modal, trigger);
-      },
-      complete: function() { alert('Closed'); } // Callback for Modal close
-    }
-  );
 
 	// SPRITES (HERO-IMAGE)
 
@@ -346,7 +188,7 @@
 			function init() {
 
 				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 5000 );
-				camera.position.set( 600, 400, 1500 );
+				camera.position.set( 600, 100, 1500 );
 				camera.lookAt( new THREE.Vector3() );
 
 				scene = new THREE.Scene();
