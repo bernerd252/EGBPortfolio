@@ -17,3 +17,7 @@
   },
   "homepage": "https://github.com/bernerd252/EGBPortfolio#readme"
 }
+
+"scripts": {
+    "start": "node your-script.js"
+}
