@@ -96,7 +96,18 @@
 		    	
 				font-family: 'Jura', sans-serif;
 				font-size: 20px;
+
 		    }
+
+		    .writting1{
+		    	
+				font-family: 'Jura', sans-serif;
+				font-size: 20px;
+				text-align: left;
+				
+		    }
+
+		    
 
 		    .aboutIcons{
 		    	height:45%;
@@ -173,7 +184,7 @@
 
 		    .projectPic{
 		    	height:220px;
-		    	width: 336px;
+		    	width: 100%;
 		    }
 			
 			.projectPicTitle{
