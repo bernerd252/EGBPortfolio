@@ -272,8 +272,20 @@ $(document).ready(function(){
   $('#djKhaledHangmanPic').css('opacity', 0);
  
   $('#djKhaledHangmanPic').waypoint(function() {
-      $('#djKhaledHangmanPic').addClass('fadeInRight');
+      $('#djKhaledHangmanPic').addClass('fadeIn');
   }, { offset: '70%' });
+  console.log("faded!")
+ 
+});
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#djKhaledHangmanPicTitle').css('opacity', 0);
+ 
+  $('#djKhaledHangmanPicTitle').waypoint(function() {
+      $('#djKhaledHangmanPicTitle').addClass('fadeInRight');
+  }, { offset: '200%' });
   console.log("faded!")
  
 });
