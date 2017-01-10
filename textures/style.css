@@ -1,6 +1,5 @@
 #container{
 				position: relative;
-				width: 50%
 			}
 
 			#sticky {
@@ -122,6 +121,14 @@
 				
 		    }
 
+		    .writting2{
+		    	
+				font-family: 'Jura', sans-serif;
+				font-size: 10px;
+				color: white;
+				padding-top: 40px;
+
+		    }
 		    
 
 		    .aboutIcons{
