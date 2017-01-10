@@ -284,7 +284,7 @@ $(document).ready(function(){
   $('#djKhaledHangmanPicTitle').css('opacity', 0);
  
   $('#djKhaledHangmanPicTitle').waypoint(function() {
-      $('#djKhaledHangmanPicTitle').addClass('fadeInRight');
+      $('#djKhaledHangmanPicTitle').addClass('fadeInDown');
   }, { offset: '200%' });
   console.log("faded!")
  
