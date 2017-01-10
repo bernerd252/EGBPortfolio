@@ -265,3 +265,15 @@ $(document).ready(function(){
   console.log("faded!")
  
 });
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#djKhaledHangmanPic').css('opacity', 0);
+ 
+  $('#djKhaledHangmanPic').waypoint(function() {
+      $('#djKhaledHangmanPic').addClass('fadeInRight');
+  }, { offset: '70%' });
+  console.log("faded!")
+ 
+});

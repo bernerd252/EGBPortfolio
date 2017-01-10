@@ -72,7 +72,7 @@
 
 		    #bigLogo{
 		    	position: fixed;
-		    	top: 20px;
+		    	top: 21px;
 		    	left: 13%;
 		    	
 		    	/*left:50px;*/
@@ -165,4 +165,21 @@
 		    	height:70px;
 		    	background-color: black;
 		    }
+
+		    #fillerBottom{
+		    	height:90px;
+		    	background-color: black;
+		    }
+
+		    .projectPic{
+		    	height:220px;
+		    	width: 336px;
+		    }
 			
+			.projectPicTitle{
+				background-color: black;
+				position: relative;
+				color: white;
+				top: -60px;
+
+			}
