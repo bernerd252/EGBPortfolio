@@ -1,21 +1,4 @@
-// LOGO FADE IN
 
-	// $(document).ready(function(){
-	// 	  $("#bigLogo").fadeIn(3000);
- //    });
-
- 	// PARTICLES
-
- // 	particlesJS.load('particles-js', 'particles.json', function() {
-	//   console.log('callback - particles.js config loaded');
-	// });
-
-
-  	// SPLASHSCREEN
-
-  	 $('.enter_link').click(function() { 
-        $(this).parent().fadeOut(500);
- 	});
 
   	// PARALLAX
   
