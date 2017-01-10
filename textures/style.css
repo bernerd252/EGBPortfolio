@@ -74,7 +74,7 @@
 
 		    #bigLogo{
 		    	position: fixed;
-		    	top: 21px;
+		    	top: 41px;
 		    	left: 12.8%;
 		    	
 		    	/*left:50px;*/
@@ -84,6 +84,7 @@
 		    #navBarLogo{
 		    	left:9.7%;
 		    	position:relative;
+		    	margin-top: 20px;
 		    }
 
 		    .header{
